@@ -1,12 +1,8 @@
 import os
 from langchain.llms import OpenAI
 import streamlit as st
-import pickle
 
-with open('awesome.pkl', 'rb') as file:
-    data = pickle.load(file)
-
-os.environ["OPENAI_API_KEY"] =  data['openai_key']
+os.environ["OPENAI_API_KEY"] =  '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'
 
 # streamlit framework
 st.title('**Ambresh Search Results**')
