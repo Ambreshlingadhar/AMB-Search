@@ -2,7 +2,7 @@ import os
 from langchain.llms import OpenAI
 import streamlit as st
 
-os.environ["OPENAI_API_KEY"] = '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' # ${{ secrets.OPENAIKEY }}
+os.environ["OPENAI_API_KEY"] =  ${{ secrets.OPENAIKEY }}
 
 # streamlit framework
 st.title('**Ambresh Search Results**')
